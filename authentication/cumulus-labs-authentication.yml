@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+source: https://cumuluslabs.io/
+docs: https://docs.cumuluslabs.io/getting-started/
+summary:
+  types: [http]
+  http_scheme: bearer
+  api_key_in: [header]
+  notes: >-
+    OpenAI-compatible bearer authentication. The Cumulus API key is passed as
+    the OpenAI SDK `api_key` (read from the CUMULUS_KEY environment variable in
+    the published quickstart) and sent as an HTTP `Authorization: Bearer <key>`
+    header against the base URL https://api.cumuluslabs.io/v1. Tunnel URLs for
+    live inference servers also require the Cumulus API key.
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  description: >-
+    Cumulus API key sent as `Authorization: Bearer <CUMULUS_KEY>`. The gateway
+    is drop-in compatible with the OpenAI SDK — set base_url to
+    https://api.cumuluslabs.io/v1 and api_key to your Cumulus key.
+  sources: [https://cumuluslabs.io/]
