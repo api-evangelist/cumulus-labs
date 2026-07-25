@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+source: https://cumuluslabs.io/
+standards:
+- id: openai-chat-completions-compatible
+  conforms: true
+  evidence: >-
+    Homepage documents an OpenAI-compatible HTTP gateway; quickstart swaps only
+    the OpenAI SDK base_url to https://api.cumuluslabs.io/v1 and keeps existing
+    code. Advertised drop-in for OpenAI, Anthropic, LangChain, LlamaIndex, and
+    Vercel AI SDKs.
+- id: oauth2
+  conforms: false
+  evidence: API-key/bearer authentication only; no OAuth flows documented.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No published OpenAPI or error schema reviewed; not asserted.
+- id: fhir-r4
+  conforms: false
+- id: fapi
+  conforms: false
+- id: scim
+  conforms: false

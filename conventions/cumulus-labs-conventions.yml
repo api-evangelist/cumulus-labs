@@ -1,0 +1,46 @@
+generated: '2026-07-18'
+method: searched
+source: https://cumuluslabs.io/
+docs: https://docs.cumuluslabs.io/
+summary: >-
+  Cross-cutting request/response semantics for the Cumulus inference gateway,
+  captured from the public marketing site and docs index. The gateway is an
+  OpenAI-compatible HTTP layer, so wire-level request/response shapes follow the
+  OpenAI Chat Completions / Responses conventions; Cumulus adds declared
+  per-workflow routing on top.
+authentication:
+  style: bearer
+  header: Authorization
+  format: Bearer <CUMULUS_KEY>
+  ref: authentication/cumulus-labs-authentication.yml
+compatibility:
+  openai_compatible: true
+  base_url: https://api.cumuluslabs.io/v1
+  drop_in_for: [OpenAI SDK, Anthropic SDK, LangChain, LlamaIndex, Vercel AI SDK]
+  note: >-
+    "Change one line" — swap the OpenAI base_url to https://api.cumuluslabs.io/v1
+    and keep existing client code. Request/response envelopes mirror the
+    upstream provider being emulated.
+routing:
+  style: declared-per-workflow
+  description: >-
+    Routing rules are declared per workflow and pick the model, provider, and
+    infrastructure per request; Cumulus describes this routing as deterministic
+    and traceable, with every request logged (input, output, model, latency,
+    cost, quality) to a replayable audit log.
+caching:
+  layers: [exact-match, prefix, semantic]
+  note: Stacked prompt/KV cache; semantic cache optional.
+versioning:
+  scheme: uri-path
+  current: v1
+  evidence: base URL https://api.cumuluslabs.io/v1
+idempotency:
+  supported: unknown
+  note: >-
+    No idempotency-key contract is documented on the public surface reviewed;
+    the accessible docs are behind a bot wall. Not asserted — do not treat as
+    supported without confirmation.
+observability:
+  request_log: true
+  fields: [input, output, model, latency, cost, quality]

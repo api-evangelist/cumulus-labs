@@ -1,0 +1,34 @@
+# Cumulus Labs
+
+> Cumulus Labs (Y Combinator W26) builds a unified inference platform for production AI. A single OpenAI-compatible API at https://api.cumuluslabs.io/v1 consolidates eight subsystems — gateway, per-workflow router, layered prompt/KV cache, request-level observability, continuous shadow evaluation, one-click LoRA fine-tuning, custom open-weight hosting, and the proprietary Ion inference engine on NVIDIA Grace and Blackwell GPUs (30-50% more throughput than stock vLLM/SGLang). Drop-in for the OpenAI, Anthropic, LangChain, LlamaIndex, and Vercel AI SDKs — change one line of config.
+
+## APIs
+
+- [Cumulus Inference Gateway (docs)](https://docs.cumuluslabs.io/): OpenAI-compatible inference gateway; base URL https://api.cumuluslabs.io/v1.
+- [Getting Started](https://docs.cumuluslabs.io/getting-started/): install and authenticate.
+- [Inference Overview](https://docs.cumuluslabs.io/inference/overview/): inference jobs and live servers.
+
+## Docs
+
+- [Documentation](https://docs.cumuluslabs.io/)
+- [Inference Glossary](https://cumuluslabs.io/glossary)
+- [About](https://cumuluslabs.io/about)
+- [Blog](https://cumulus.blog/)
+
+## Authentication
+
+- Bearer API key: `Authorization: Bearer <CUMULUS_KEY>` against https://api.cumuluslabs.io/v1 (OpenAI-compatible).
+
+## Artifacts
+
+- [Authentication profile](authentication/cumulus-labs-authentication.yml)
+- [API conventions](conventions/cumulus-labs-conventions.yml)
+- [Conformance](conformance/cumulus-labs-conformance.yml)
+- [Lifecycle](lifecycle/cumulus-labs-lifecycle.yml)
+
+## Company
+
+- [GitHub organization](https://github.com/cumulus-compute-labs)
+- [LinkedIn](https://www.linkedin.com/company/cumuluscomputelabs/)
+- [Y Combinator](https://www.ycombinator.com/companies/cumulus-labs)
+- Terms: https://cumuluslabs.io/terms-of-service.pdf — Privacy: https://cumuluslabs.io/privacy-policy.pdf

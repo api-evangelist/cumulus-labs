@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://cumuluslabs.io/
+versioning:
+  scheme: uri-path
+  current: v1
+  docs: https://docs.cumuluslabs.io/
+  evidence: base URL https://api.cumuluslabs.io/v1
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: No deprecation policy or Sunset/Deprecation header support found on the public surface.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+notes: >-
+  Early-stage (YC W26). No public status page, SLA, or deprecation policy was
+  found at review time; the API is at path version v1. Blog at
+  https://cumulus.blog/ (Cloudflare-gated to automated fetchers at review time).
