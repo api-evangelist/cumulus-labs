@@ -83,6 +83,12 @@ apis:
   - Inference
   - LLM
   - OpenAI-Compatible
+  - Gateways
+  - GPU
+  tags_raw:
+  - Inference
+  - LLM
+  - OpenAI-Compatible
   - Gateway
   - GPU
   properties:
