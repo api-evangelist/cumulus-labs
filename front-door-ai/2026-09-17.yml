@@ -1,0 +1,36 @@
+# Front Door AI Index — cumulus-labs — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: cumulus-labs
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: cumuluslabs.io
+  final_host: cumuluslabs.io
+  ownership: own
+  owner: cumulus-labs
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 34
+  host_score: 34
+  density: 57.53
+  words: 591
+  tiers:
+    agentic: 12
+    core: 8
+    model: 14
+  ambiguous: 1
+  top_terms:
+    OpenAI: 8
+    inference: 7
+    AI: 5
+    fine-tune: 4
+    LLMs: 3
+    Anthropic: 2
+    Azure OpenAI: 1
+    Bedrock: 1
+    Llama: 1
+    Vertex AI: 1
+    agent: 1
+    prompts: 1
