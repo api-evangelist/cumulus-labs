@@ -53,7 +53,7 @@ tags:
 - LLM
 - AI Infrastructure
 - GPU
-- Machine-Learning
+- Machine Learning
 - Model Serving
 - Fine-Tuning
 - API Gateway
@@ -69,6 +69,7 @@ tags_raw:
 - Fine-Tuning
 - API Gateway
 - Y Combinator
+- Machine-Learning
 image: https://cumuluslabs.io/cumulus-logo/Cumulus-White.svg
 apis:
 - name: Cumulus Inference Gateway
